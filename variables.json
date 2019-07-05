@@ -11,6 +11,7 @@
       "affiliations": [
         "School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal"
       ],
+      "correspondence": true,
       "affiliation_numbers": [
         1
       ]
@@ -75,12 +76,14 @@
     "repo_slug": "romainmartinez/synchro-paper",
     "repo_owner": "romainmartinez",
     "repo_name": "synchro-paper",
-    "commit": "03bbefa3201d9a8cb8cf29c949c7814f2e465c16"
+    "commit": "5f06f86db34826c94c161a88d4816633b388160e"
   },
   "manuscript_stats": {
     "reference_counts": {
-      "total": 0
+      "doi": 2,
+      "pmid": 1,
+      "total": 3
     },
-    "word_count": 422
+    "word_count": 595
   }
 }

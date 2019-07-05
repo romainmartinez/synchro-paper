@@ -23,9 +23,9 @@ title: Predicting eggbeater kick performances from hip joint function testing in
 
 <small><em>
 This manuscript
-([permalink](https://romainmartinez.github.io/synchro-paper/v/03bbefa3201d9a8cb8cf29c949c7814f2e465c16/))
+([permalink](https://romainmartinez.github.io/synchro-paper/v/5f06f86db34826c94c161a88d4816633b388160e/))
 was automatically generated
-from [romainmartinez/synchro-paper@03bbefa](https://github.com/romainmartinez/synchro-paper/tree/03bbefa3201d9a8cb8cf29c949c7814f2e465c16)
+from [romainmartinez/synchro-paper@5f06f86](https://github.com/romainmartinez/synchro-paper/tree/5f06f86db34826c94c161a88d4816633b388160e)
 on July 5, 2019.
 </em></small>
 
@@ -33,47 +33,19 @@ on July 5, 2019.
 
 
 
-+ **Romain Martinez**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
-    [0000-0001-9681-9448](https://orcid.org/0000-0001-9681-9448)
-    · ![GitHub icon](images/github.svg){.inline_icon}
-    [romainmartinez](https://github.com/romainmartinez)
-    · ![Twitter icon](images/twitter.svg){.inline_icon}
-    [rmn_mrtnz](https://twitter.com/rmn_mrtnz)<br>
-  <small>
-     School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal
-  </small>
+Romain Martinez^1[*](#correspondence)^,
+Élodie Monga-Dubreuil^1^,
+Najoua Assila^1^,
+Gauthier Desmyttere^1^,
+Mickael Begon^1^
 
-+ **Élodie Monga-Dubreuil**<br><br>
-  <small>
-     School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal
-  </small>
 
-+ **Najoua Assila**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
-    [0000-0002-8929-2526](https://orcid.org/0000-0002-8929-2526)
-    · ![GitHub icon](images/github.svg){.inline_icon}
-    [naassila](https://github.com/naassila)<br>
-  <small>
-     School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal
-  </small>
+1. School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal
 
-+ **Gauthier Desmyttere**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
-    [0000-0002-9161-9268](https://orcid.org/0000-0002-9161-9268)<br>
-  <small>
-     School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal
-  </small>
-
-+ **Mickael Begon**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
-    [0000-0002-4107-9160](https://orcid.org/0000-0002-4107-9160)
-    · ![GitHub icon](images/github.svg){.inline_icon}
-    [mickaelbegon](https://github.com/mickaelbegon)<br>
-  <small>
-     School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal
-  </small>
-
+::: {#correspondence}
+\* — correspondence preferred via [GitHub Issues](https://github.com/romainmartinez/synchro-paper/issues).
+Otherwise, address correspondence to <martinez.staps@gmail.com>.
+:::
 
 
 ## Abstract {.page_break_before}
@@ -88,7 +60,15 @@ By using a model that is both accurate and interpretable, practitioners could ac
 We believe machine learning and data-driven decision-making provide sports scientists and coaches with new opportunities to enhance research and performance.
 
 
+## Introduction
 
+In artistic swimming about 40% of solo and team routine duration is spent with the head out of the water and most of that time is associated with the use of eggbeater kicks [@cOCMIvZK].
+The eggbeater kick involves a complex combination of hip, knee and foot motions [@aThnaBqz; @rscUQMDF] to keep the body high above the water surface while performing artistic arm movements.
+This water-treading technique is therefore a representative and important skill in artistic swimming, but also in water polo and lifesaving [3].
+Eggbeater kicks can be performed with both legs simultaneously (termed as “body-boost” or “dynamic”); or alternatively and continuously (termed as “sustained”).
+In the latter case, a cyclical action is performed by left and right lower limbs in a similar motion but opposite in phase.
+During team events, eggbeater kick is also needed during acrobatic moves (i.e. platforms, lifts and throws that involve up to 9 swimmers who propel or maintain another swimmer out of the water) by lower swimmers to create vertical propulsive force.
+Height relative to the water surface is one of the key factors of performance and is evaluated using the FINA guiding scale for height (0 to 10 points with 0.5 resolution based on body landmarks) for both sustained and dynamic height [5].
 
 ## References {.page_break_before}
 

@@ -26,21 +26,40 @@
 <header id="title-block-header">
 <h1 class="title">Predicting eggbeater kick performances from hip joint function testing in artistic swimming</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://romainmartinez.github.io/synchro-paper/v/03bbefa3201d9a8cb8cf29c949c7814f2e465c16/">permalink</a>) was automatically generated from <a href="https://github.com/romainmartinez/synchro-paper/tree/03bbefa3201d9a8cb8cf29c949c7814f2e465c16">romainmartinez/synchro-paper@03bbefa</a> on July 5, 2019. </em></small></p>
+<p><small><em> This manuscript (<a href="https://romainmartinez.github.io/synchro-paper/v/5f06f86db34826c94c161a88d4816633b388160e/">permalink</a>) was automatically generated from <a href="https://github.com/romainmartinez/synchro-paper/tree/5f06f86db34826c94c161a88d4816633b388160e">romainmartinez/synchro-paper@5f06f86</a> on July 5, 2019. </em></small></p>
 <h2 id="authors">Authors</h2>
-<ul>
-<li><p><strong>Romain Martinez</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0001-9681-9448">0000-0001-9681-9448</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/romainmartinez">romainmartinez</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/rmn_mrtnz">rmn_mrtnz</a><br> <small> School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal </small></p></li>
-<li><p><strong>Élodie Monga-Dubreuil</strong><br><br> <small> School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal </small></p></li>
-<li><p><strong>Najoua Assila</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0002-8929-2526">0000-0002-8929-2526</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/naassila">naassila</a><br> <small> School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal </small></p></li>
-<li><p><strong>Gauthier Desmyttere</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0002-9161-9268">0000-0002-9161-9268</a><br> <small> School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal </small></p></li>
-<li><p><strong>Mickael Begon</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0002-4107-9160">0000-0002-4107-9160</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/mickaelbegon">mickaelbegon</a><br> <small> School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal </small></p></li>
-</ul>
+<p>Romain Martinez<sup>1<a href="#correspondence">*</a></sup>, Élodie Monga-Dubreuil<sup>1</sup>, Najoua Assila<sup>1</sup>, Gauthier Desmyttere<sup>1</sup>, Mickael Begon<sup>1</sup></p>
+<ol type="1">
+<li>School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal</li>
+</ol>
+<div id="correspondence">
+<p>* — correspondence preferred via <a href="https://github.com/romainmartinez/synchro-paper/issues">GitHub Issues</a>. Otherwise, address correspondence to <a href="mailto:martinez.staps@gmail.com" class="email">martinez.staps@gmail.com</a>.</p>
+</div>
 <h2 id="abstract" class="page_break_before">Abstract</h2>
 <p>Eggbeater kick is an important skill in artistic swimming to lift the body above water level. Previous attempts to model eggbeater kick performance include complex biomechanical parameters that cannot be easily used to guide strength and conditioning training. In this study, we modelled the relationship between hip function and eggbeater kick performance in 92 elite artistic swimmers with a machine learning algorithm. We assessed hip function with six isometric tests that can be easily performed on a weekly basis, without the need for a physiotherapist or a scientist. Our model may accurately predict future performances as the predictive error is similar to the resolution of the scale used by judges during competitions. We then provide a set of interpretation and simulations methods that showcase some of the important predictors of the eggbeater kick performance and highlight personalized strategy to reach a target performance. By using a model that is both accurate and interpretable, practitioners could access objective decision-making support, allowing them to effectively select athletes and design personalized conditioning programs. We believe machine learning and data-driven decision-making provide sports scientists and coaches with new opportunities to enhance research and performance.</p>
+<h2 id="introduction">Introduction</h2>
+<p>In artistic swimming about 40% of solo and team routine duration is spent with the head out of the water and most of that time is associated with the use of eggbeater kicks <span class="citation" data-cites="cOCMIvZK">[<a href="#ref-cOCMIvZK" role="doc-biblioref">1</a>]</span>. The eggbeater kick involves a complex combination of hip, knee and foot motions <span class="citation" data-cites="aThnaBqz rscUQMDF">[<a href="#ref-aThnaBqz" role="doc-biblioref">2</a>,<a href="#ref-rscUQMDF" role="doc-biblioref">3</a>]</span> to keep the body high above the water surface while performing artistic arm movements. This water-treading technique is therefore a representative and important skill in artistic swimming, but also in water polo and lifesaving [3]. Eggbeater kicks can be performed with both legs simultaneously (termed as “body-boost” or “dynamic”); or alternatively and continuously (termed as “sustained”). In the latter case, a cyclical action is performed by left and right lower limbs in a similar motion but opposite in phase. During team events, eggbeater kick is also needed during acrobatic moves (i.e. platforms, lifts and throws that involve up to 9 swimmers who propel or maintain another swimmer out of the water) by lower swimmers to create vertical propulsive force. Height relative to the water surface is one of the key factors of performance and is evaluated using the FINA guiding scale for height (0 to 10 points with 0.5 resolution based on body landmarks) for both sustained and dynamic height [5].</p>
 <h2 id="references" class="page_break_before">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" role="doc-bibliography">
-
+<div id="ref-cOCMIvZK">
+<p>1. <strong>A time-motion analysis of elite solo synchronized swimming.</strong><br />
+Teresa Alentejano, Dru Marshall, Gordon Bell<br />
+<em>International journal of sports physiology and performance</em> (2008-03) <a href="https://www.ncbi.nlm.nih.gov/pubmed/19193952">https://www.ncbi.nlm.nih.gov/pubmed/19193952</a><br />
+PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/19193952">19193952</a></p>
+</div>
+<div id="ref-aThnaBqz">
+<p>2. <strong>Analysis of the Eggbeater Kick Used to Maintain Height in Water Polo</strong><br />
+Ross H. Sanders<br />
+<em>Journal of Applied Biomechanics</em> (1999-08) <a href="https://doi.org/gfkbk5">https://doi.org/gfkbk5</a><br />
+DOI: <a href="https://doi.org/10.1123/jab.15.3.284">10.1123/jab.15.3.284</a></p>
+</div>
+<div id="ref-rscUQMDF">
+<p>3. <strong>Swimming</strong><br />
+Miwako Homma, Masanobu Homma<br />
+<em>Sports Biomechanics</em> (2005-01) <a href="https://doi.org/db623n">https://doi.org/db623n</a><br />
+DOI: <a href="https://doi.org/10.1080/14763140508522853">10.1080/14763140508522853</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/15807378">15807378</a></p>
+</div>
 </div>
 <!-- default theme -->
 
