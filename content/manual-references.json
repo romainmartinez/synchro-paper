@@ -1,21 +1,18 @@
 [
   {
-    "id": "url:https://github.com/manubot/rootstock",
-    "type": "webpage",
-    "URL": "https://github.com/manubot/rootstock",
-    "title": "manubot/rootstock GitHub repository",
-    "container-title": "GitHub",
+    "id": "raw:fina",
+    "type": "Book",
+    "title": "FINA Artistic swimming manual for judges, coaches and referees",
     "issued": {
       "date-parts": [
         [
-          2019
+          2018
         ]
       ]
     },
     "author": [
       {
-        "given": "Daniel",
-        "family": "Himmelstein"
+        "family": "FINA"
       }
     ]
   }
