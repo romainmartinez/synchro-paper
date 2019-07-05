@@ -76,14 +76,15 @@
     "repo_slug": "romainmartinez/synchro-paper",
     "repo_owner": "romainmartinez",
     "repo_name": "synchro-paper",
-    "commit": "5f06f86db34826c94c161a88d4816633b388160e"
+    "commit": "863bd87d1e87fdae6ab1ff2f9c94b528fc3d58ad"
   },
   "manuscript_stats": {
     "reference_counts": {
-      "doi": 2,
+      "doi": 12,
       "pmid": 1,
-      "total": 3
+      "raw": 1,
+      "total": 14
     },
-    "word_count": 595
+    "word_count": 1211
   }
 }
