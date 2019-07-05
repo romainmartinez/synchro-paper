@@ -13,30 +13,30 @@ author_info:
     orcid: 0000-0001-9681-9448
     twitter: rmn_mrtnz
     email: martinez.staps@gmail.com
-    affiliations:
-      - School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal
+    affiliations: School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal
+
   - name: Élodie Monga-Dubreuil
     initials: EMD
     email: emongadubreuil@gmail.com
+    affiliations: School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal
+
+  - github: naassila
+    name: Najoua Assila
+    initials: NA
+    orcid: 0000-0002-8929-2526
+    email: assila.najoua@gmail.com
+    affiliations: School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal
+
+  - name: Gauthier Desmyttere
+    initials: GD
+    orcid: 0000-0002-9161-9268
+    email: desmyttere.gauthier@hotmail.fr
+    affiliations: School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal
+
+  - github: mickaelbegon
+    name: Mickael Begon
+    initials: MB
+    orcid: 0000-0002-4107-9160
+    email: mickaelbegon@gmail.com
     affiliations:
       - School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal
-  - github: naassila
-      name: Najoua Assila
-      initials: NA
-      orcid: 0000-0002-8929-2526
-      email: assila.najoua@gmail.com
-      affiliations:
-        - School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal
-  - name: Gauthier Desmyttere
-      initials: GD
-      orcid: 0000-0002-9161-9268
-      email: desmyttere.gauthier@hotmail.fr
-      affiliations:
-        - School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal
-  - github: mickaelbegon
-      name: Mickael Begon
-      initials: MB
-      orcid: 0000-0002-4107-9160
-      email: mickaelbegon@gmail.com
-      affiliations:
-        - School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal
