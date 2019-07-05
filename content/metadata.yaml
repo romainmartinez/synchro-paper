@@ -1,27 +1,42 @@
 ---
-title: "Manuscript Title"
+title: "Predicting eggbeater kick performances from hip joint function testing in artistic swimming"
 keywords:
-  - markdown
-  - publishing
-  - manubot
+  - artistic swimming
+  - eggbeater kick
+  - machine learning
+  - hip joint function
 lang: en-US
 author_info:
-  -
-    github: johndoe
-    name: John Doe
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    email: john.doe@something.com
+  - github: romainmartinez
+    name: Romain Martinez
+    initials: RM
+    orcid: 0000-0001-9681-9448
+    twitter: rmn_mrtnz
+    email: martinez.staps@gmail.com
+    affiliations: School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal
+
+  - name: Élodie Monga-Dubreuil
+    initials: EMD
+    email: emongadubreuil@gmail.com
+    affiliations: School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal
+
+  - github: naassila
+    name: Najoua Assila
+    initials: NA
+    orcid: 0000-0002-8929-2526
+    email: assila.najoua@gmail.com
+    affiliations: School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal
+
+  - name: Gauthier Desmyttere
+    initials: GD
+    orcid: 0000-0002-9161-9268
+    email: desmyttere.gauthier@hotmail.fr
+    affiliations: School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal
+
+  - github: mickaelbegon
+    name: Mickael Begon
+    initials: MB
+    orcid: 0000-0002-4107-9160
+    email: mickaelbegon@gmail.com
     affiliations:
-      - Department of Something, University of Whatever
-    funders: Grant XXXXXXXX
-  -
-    github: janeroe
-    name: Jane Roe
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
-    affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+      - School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal
