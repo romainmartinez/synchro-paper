@@ -1,4 +1,4 @@
-# Automated scholarly manuscripts on GitHub
+# Predicting eggbeater kick performances from hip joint function testing in artistic swimming
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
 
@@ -10,8 +10,7 @@
 
 <!-- usage note: edit this section. -->
 
-This repository is a template manuscript (a.k.a. rootstock).
-Actual manuscript instances will clone this repository (see [`SETUP.md`](SETUP.md)) and replace this paragraph with a description of their manuscript.
+This repository contains code for the paper Predicting eggbeater kick performances from hip joint function testing in artistic swimming, by Romain Martinez, Élodie Monga-Dubreuil, Najoua Assila, Gauthier Desmyttere and Mickael Begon.
 
 ## Manubot
 
