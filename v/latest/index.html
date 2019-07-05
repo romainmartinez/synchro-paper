@@ -4,11 +4,14 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="John Doe" />
-  <meta name="author" content="Jane Roe" />
+  <meta name="author" content="Romain Martinez" />
+  <meta name="author" content="Élodie Monga-Dubreuil" />
+  <meta name="author" content="Najoua Assila" />
+  <meta name="author" content="Gauthier Desmyttere" />
+  <meta name="author" content="Mickael Begon" />
   <meta name="dcterms.date" content="2019-07-05" />
-  <meta name="keywords" content="markdown, publishing, manubot" />
-  <title>Manuscript Title</title>
+  <meta name="keywords" content="artistic swimming, eggbeater kick, machine learning, hip joint function" />
+  <title>Predicting eggbeater kick performances from hip joint function testing in artistic swimming</title>
   <style>
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
@@ -21,15 +24,19 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Manuscript Title</h1>
+<h1 class="title">Predicting eggbeater kick performances from hip joint function testing in artistic swimming</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://romainmartinez.github.io/synchro-paper/v/147f1f484ec0a9937493bfb99d217acba8a022de/">permalink</a>) was automatically generated from <a href="https://github.com/romainmartinez/synchro-paper/tree/147f1f484ec0a9937493bfb99d217acba8a022de">romainmartinez/synchro-paper@147f1f4</a> on July 5, 2019. </em></small></p>
+<p><small><em> This manuscript (<a href="https://romainmartinez.github.io/synchro-paper/v/03bbefa3201d9a8cb8cf29c949c7814f2e465c16/">permalink</a>) was automatically generated from <a href="https://github.com/romainmartinez/synchro-paper/tree/03bbefa3201d9a8cb8cf29c949c7814f2e465c16">romainmartinez/synchro-paper@03bbefa</a> on July 5, 2019. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
-<li><p><strong>John Doe</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/johndoe">johndoe</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/johndoe">johndoe</a><br> <small> Department of Something, University of Whatever · Funded by Grant XXXXXXXX </small></p></li>
-<li><p><strong>Jane Roe</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/janeroe">janeroe</a><br> <small> Department of Something, University of Whatever; Department of Whatever, University of Something </small></p></li>
+<li><p><strong>Romain Martinez</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0001-9681-9448">0000-0001-9681-9448</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/romainmartinez">romainmartinez</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/rmn_mrtnz">rmn_mrtnz</a><br> <small> School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal </small></p></li>
+<li><p><strong>Élodie Monga-Dubreuil</strong><br><br> <small> School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal </small></p></li>
+<li><p><strong>Najoua Assila</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0002-8929-2526">0000-0002-8929-2526</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/naassila">naassila</a><br> <small> School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal </small></p></li>
+<li><p><strong>Gauthier Desmyttere</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0002-9161-9268">0000-0002-9161-9268</a><br> <small> School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal </small></p></li>
+<li><p><strong>Mickael Begon</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0002-4107-9160">0000-0002-4107-9160</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/mickaelbegon">mickaelbegon</a><br> <small> School of Kinesiology and Exercise Science, Faculty of Medicine, University of Montreal </small></p></li>
 </ul>
 <h2 id="abstract" class="page_break_before">Abstract</h2>
+<p>Eggbeater kick is an important skill in artistic swimming to lift the body above water level. Previous attempts to model eggbeater kick performance include complex biomechanical parameters that cannot be easily used to guide strength and conditioning training. In this study, we modelled the relationship between hip function and eggbeater kick performance in 92 elite artistic swimmers with a machine learning algorithm. We assessed hip function with six isometric tests that can be easily performed on a weekly basis, without the need for a physiotherapist or a scientist. Our model may accurately predict future performances as the predictive error is similar to the resolution of the scale used by judges during competitions. We then provide a set of interpretation and simulations methods that showcase some of the important predictors of the eggbeater kick performance and highlight personalized strategy to reach a target performance. By using a model that is both accurate and interpretable, practitioners could access objective decision-making support, allowing them to effectively select athletes and design personalized conditioning programs. We believe machine learning and data-driven decision-making provide sports scientists and coaches with new opportunities to enhance research and performance.</p>
 <h2 id="references" class="page_break_before">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" role="doc-bibliography">
