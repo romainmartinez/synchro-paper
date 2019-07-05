@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/romainmartinez/synchro-paper/tree/gh-pages) branch hosts the contents of this directory at https://romainmartinez.github.io/synchro-paper/.
-The permalink for this webpage version is https://romainmartinez.github.io/synchro-paper/v/5f06f86db34826c94c161a88d4816633b388160e/.
+The permalink for this webpage version is https://romainmartinez.github.io/synchro-paper/v/863bd87d1e87fdae6ab1ff2f9c94b528fc3d58ad/.
 To redirect to the permalink for the latest manuscript version at anytime, use the link https://romainmartinez.github.io/synchro-paper/v/freeze/.
 
 ## Files
@@ -36,4 +36,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`5f06f86db34826c94c161a88d4816633b388160e`](https://github.com/romainmartinez/synchro-paper/commit/5f06f86db34826c94c161a88d4816633b388160e).
+[`863bd87d1e87fdae6ab1ff2f9c94b528fc3d58ad`](https://github.com/romainmartinez/synchro-paper/commit/863bd87d1e87fdae6ab1ff2f9c94b528fc3d58ad).

@@ -26,7 +26,7 @@
 <header id="title-block-header">
 <h1 class="title">Predicting eggbeater kick performances from hip joint function testing in artistic swimming</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://romainmartinez.github.io/synchro-paper/v/5f06f86db34826c94c161a88d4816633b388160e/">permalink</a>) was automatically generated from <a href="https://github.com/romainmartinez/synchro-paper/tree/5f06f86db34826c94c161a88d4816633b388160e">romainmartinez/synchro-paper@5f06f86</a> on July 5, 2019. </em></small></p>
+<p><small><em> This manuscript (<a href="https://romainmartinez.github.io/synchro-paper/v/863bd87d1e87fdae6ab1ff2f9c94b528fc3d58ad/">permalink</a>) was automatically generated from <a href="https://github.com/romainmartinez/synchro-paper/tree/863bd87d1e87fdae6ab1ff2f9c94b528fc3d58ad">romainmartinez/synchro-paper@863bd87</a> on July 5, 2019. </em></small></p>
 <h2 id="authors">Authors</h2>
 <p>Romain Martinez<sup>1<a href="#correspondence">*</a></sup>, Élodie Monga-Dubreuil<sup>1</sup>, Najoua Assila<sup>1</sup>, Gauthier Desmyttere<sup>1</sup>, Mickael Begon<sup>1</sup></p>
 <ol type="1">
@@ -38,7 +38,10 @@
 <h2 id="abstract" class="page_break_before">Abstract</h2>
 <p>Eggbeater kick is an important skill in artistic swimming to lift the body above water level. Previous attempts to model eggbeater kick performance include complex biomechanical parameters that cannot be easily used to guide strength and conditioning training. In this study, we modelled the relationship between hip function and eggbeater kick performance in 92 elite artistic swimmers with a machine learning algorithm. We assessed hip function with six isometric tests that can be easily performed on a weekly basis, without the need for a physiotherapist or a scientist. Our model may accurately predict future performances as the predictive error is similar to the resolution of the scale used by judges during competitions. We then provide a set of interpretation and simulations methods that showcase some of the important predictors of the eggbeater kick performance and highlight personalized strategy to reach a target performance. By using a model that is both accurate and interpretable, practitioners could access objective decision-making support, allowing them to effectively select athletes and design personalized conditioning programs. We believe machine learning and data-driven decision-making provide sports scientists and coaches with new opportunities to enhance research and performance.</p>
 <h2 id="introduction">Introduction</h2>
-<p>In artistic swimming about 40% of solo and team routine duration is spent with the head out of the water and most of that time is associated with the use of eggbeater kicks <span class="citation" data-cites="cOCMIvZK">[<a href="#ref-cOCMIvZK" role="doc-biblioref">1</a>]</span>. The eggbeater kick involves a complex combination of hip, knee and foot motions <span class="citation" data-cites="aThnaBqz rscUQMDF">[<a href="#ref-aThnaBqz" role="doc-biblioref">2</a>,<a href="#ref-rscUQMDF" role="doc-biblioref">3</a>]</span> to keep the body high above the water surface while performing artistic arm movements. This water-treading technique is therefore a representative and important skill in artistic swimming, but also in water polo and lifesaving [3]. Eggbeater kicks can be performed with both legs simultaneously (termed as “body-boost” or “dynamic”); or alternatively and continuously (termed as “sustained”). In the latter case, a cyclical action is performed by left and right lower limbs in a similar motion but opposite in phase. During team events, eggbeater kick is also needed during acrobatic moves (i.e. platforms, lifts and throws that involve up to 9 swimmers who propel or maintain another swimmer out of the water) by lower swimmers to create vertical propulsive force. Height relative to the water surface is one of the key factors of performance and is evaluated using the FINA guiding scale for height (0 to 10 points with 0.5 resolution based on body landmarks) for both sustained and dynamic height [5].</p>
+<p>In artistic swimming, about 40% of solo and team routine duration is spent with the head out of the water and most of that time is associated with the use of eggbeater kicks <span class="citation" data-cites="cOCMIvZK">[<a href="#ref-cOCMIvZK" role="doc-biblioref">1</a>]</span>. The eggbeater kick involves a complex combination of hip, knee and foot motions <span class="citation" data-cites="aThnaBqz rscUQMDF">[<a href="#ref-aThnaBqz" role="doc-biblioref">2</a>,<a href="#ref-rscUQMDF" role="doc-biblioref">3</a>]</span> to keep the body high above the water surface while performing artistic arm movements. This water-treading technique is therefore a representative and important skill in artistic swimming, but also in water polo and lifesaving <span class="citation" data-cites="aThnaBqz">[<a href="#ref-aThnaBqz" role="doc-biblioref">2</a>]</span>. Eggbeater kicks can be performed with both legs simultaneously (termed as “body-boost” or “dynamic”); or alternatively and continuously (termed as “sustained”). In the latter case, a cyclical action is performed by left and right lower limbs in a similar motion but opposite in phase. During team events, eggbeater kick is also needed during acrobatic moves (i.e. platforms, lifts and throws that involve up to 9 swimmers who propel or maintain another swimmer out of the water) by lower swimmers to create vertical propulsive force. Height relative to the water surface is one of the key factors of performance and is evaluated using the FINA guiding scale for height (0 to 10 points with 0.5 resolution based on body landmarks) for both sustained and dynamic height <span class="citation" data-cites="EMbE5U2g">[<a href="#ref-EMbE5U2g" role="doc-biblioref">4</a>]</span>.</p>
+<p>From studies on water polo, the pattern of muscle activation during sustained eggbeater kick is a complex movement with high (up to 80%) levels of activation especially for the vastus medialis and the bicep femoris <span class="citation" data-cites="aThnaBqz Gf774x32">[<a href="#ref-aThnaBqz" role="doc-biblioref">2</a>,<a href="#ref-Gf774x32" role="doc-biblioref">5</a>]</span>. Overall activities higher than 20% were reported for bi-articular (hip and knee) muscles that contribute to hip flexion-extension and abduction-adduction <span class="citation" data-cites="Gf774x32">[<a href="#ref-Gf774x32" role="doc-biblioref">5</a>]</span>. To the best of your knowledge, no study reported hip joint monoarticular muscle activities while Sanders <span class="citation" data-cites="G9nw32JQ">[<a href="#ref-G9nw32JQ" role="doc-biblioref">6</a>]</span> and Oliveira et al. <span class="citation" data-cites="Gf774x32">[<a href="#ref-Gf774x32" role="doc-biblioref">5</a>]</span> conclude that hip muscle strength, in addition to fast knee flexion and extension and speed of the feet should be optimized. Oliveira et al. <span class="citation" data-cites="13wN9HgnX">[<a href="#ref-13wN9HgnX" role="doc-biblioref">7</a>]</span> found that a large abduction and flexion of the hips, as well as a fast extension and flexion of the knees are essential kinematic factors for high level of performance. Moreover, Homma et al. <span class="citation" data-cites="rscUQMDF">[<a href="#ref-rscUQMDF" role="doc-biblioref">3</a>]</span> reinforce that knees should be maintained higher than hip joints to ensure a horizontal trajectory of the feet to create a continuous lift force, rather than oscillating drag force using upside-down feet movements. Zinner et al. <span class="citation" data-cites="uOs7XTRn">[<a href="#ref-uOs7XTRn" role="doc-biblioref">8</a>]</span> also showed that water polo players with higher isometric hip abductor muscle strength performed better in eggbeater kick. Hip joint strength appears as essential to maintain knee height and enable horizontal trPajectories against water resistance using a combination of hip internal-external rotation and knee flexion-extension.</p>
+<p>To understand the relationship between technique and performance, qualitative models of sustained and dynamic heights have been proposed by Sanders et al. <span class="citation" data-cites="aThnaBqz">[<a href="#ref-aThnaBqz" role="doc-biblioref">2</a>]</span>. They also proposed regression models to predict the height based on foot speed, range of knee extension and initial angle of the upper body with respect to the horizontal. Sanders’ predictive models of sustained and dynamic height explain 90% and 79% of the variance (n=12, r=0.85; n=16 r=0.55, respectively). Oliveira <span class="citation" data-cites="13wN9HgnX">[<a href="#ref-13wN9HgnX" role="doc-biblioref">7</a>]</span> and Homma <span class="citation" data-cites="rscUQMDF">[<a href="#ref-rscUQMDF" role="doc-biblioref">3</a>]</span> also reported modest to strong correlations between height and kinematics variables such as orientation and speed of the limbs. Unfortunately, these predictive models are based on small samples of swimmers (4&lt;n&lt;16) and were not cross-validated. Furthermore, they cannot easily be used for personalizing swimmer’s conditioning since they rely on biomechanical parameters that require 3D kinematic analyses. Since the ability to generate high foot velocities is related to muscular function <span class="citation" data-cites="Gf774x32">[<a href="#ref-Gf774x32" role="doc-biblioref">5</a>]</span>, we hypothesize that hip joint strength could be used to predict eggbeater kick performance. It is anticipated that eggbeater kick for sustained or dynamic height and vertical propulsive force requires different physical capacities and therefore need specific conditioning content.</p>
+<p>A recent survey pointed out the superiority of advanced machine learning algorithms over multiple linear regressions (as used in Sanders <span class="citation" data-cites="aThnaBqz">[<a href="#ref-aThnaBqz" role="doc-biblioref">2</a>]</span>) to predict physical capability (e.g. maximal oxygen uptake), because they account for complex nonlinear relationships between variables <span class="citation" data-cites="8QQByeMx">[<a href="#ref-8QQByeMx" role="doc-biblioref">9</a>]</span>. Machine learning is gaining popularity in sports (e.g. in triathlon <span class="citation" data-cites="iUmDuGC6">[<a href="#ref-iUmDuGC6" role="doc-biblioref">10</a>]</span>; biathlon <span class="citation" data-cites="Dulx77Pa">[<a href="#ref-Dulx77Pa" role="doc-biblioref">11</a>]</span>; or track and field <span class="citation" data-cites="M4dO37MO">[<a href="#ref-M4dO37MO" role="doc-biblioref">12</a>]</span>) as in most domains to predict performance. A review of computational intelligence applications in sports underlined the need to develop artificial support systems that would help to design training plans, to measure indicators of an athlete’s readiness and to analyze data during training sessions <span class="citation" data-cites="MBEmmpnE">[<a href="#ref-MBEmmpnE" role="doc-biblioref">13</a>]</span>. To implement such systems, accurate performance prediction is crucial. Gradient boosting algorithms are one possible approach to achieve such accuracy. These are highly customizable and powerful tools for learning and analyzing problems with heterogeneous parameters and noisy data with complex interactions <span class="citation" data-cites="doYf0PkM">[<a href="#ref-doYf0PkM" role="doc-biblioref">14</a>]</span>. The current study aims to investigate the relationship between hip function in elite artistic swimmers and performance in eggbeater kicks using gradient boosting algorithms. The predictive model will be considered valid if its accuracy is similar to the FINA guiding scale for height resolution (0.5). A secondary objective is to illustrate how the model can be used to develop an artificial conditioning support system.</p>
 <h2 id="references" class="page_break_before">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" role="doc-bibliography">
@@ -59,6 +62,71 @@ DOI: <a href="https://doi.org/10.1123/jab.15.3.284">10.1123/jab.15.3.284</a></p>
 Miwako Homma, Masanobu Homma<br />
 <em>Sports Biomechanics</em> (2005-01) <a href="https://doi.org/db623n">https://doi.org/db623n</a><br />
 DOI: <a href="https://doi.org/10.1080/14763140508522853">10.1080/14763140508522853</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/15807378">15807378</a></p>
+</div>
+<div id="ref-EMbE5U2g">
+<p>4. <strong>FINA Artistic swimming manual for judges, coaches and referees</strong><br />
+FINA<br />
+(2018)</p>
+</div>
+<div id="ref-Gf774x32">
+<p>5. <strong>Muscle Activity During the Typical Water Polo Eggbeater Kick</strong><br />
+Ricardo Jorge Fernandes, Mariana Sarmento, Silverio Liberal, Pedro Alexandre Figueiredo, Pedro Gonçalves, João Paulo Vilas-Boas<br />
+<em>International Journal of Aquatic Research and Education</em> (2010-05) <a href="https://doi.org/gf4nbs">https://doi.org/gf4nbs</a><br />
+DOI: <a href="https://doi.org/10.25035/ijare.04.02.07">10.25035/ijare.04.02.07</a></p>
+</div>
+<div id="ref-G9nw32JQ">
+<p>6. <strong>A Model of Kinematic Variables Determining Height Achieved in Water Polo Boosts</strong><br />
+Ross H. Sanders<br />
+<em>Journal of Applied Biomechanics</em> (1999-08) <a href="https://doi.org/gf4nbm">https://doi.org/gf4nbm</a><br />
+DOI: <a href="https://doi.org/10.1123/jab.15.3.270">10.1123/jab.15.3.270</a></p>
+</div>
+<div id="ref-13wN9HgnX">
+<p>7. <strong>Kinematic and kinetic evidence for functional lateralization in a symmetrical motor task: the water polo eggbeater kick</strong><br />
+Nuno Oliveira, Ross H. Sanders<br />
+<em>Experimental Brain Research</em> (2014-12-16) <a href="https://doi.org/f62rjj">https://doi.org/f62rjj</a><br />
+DOI: <a href="https://doi.org/10.1007/s00221-014-4166-8">10.1007/s00221-014-4166-8</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25511165">25511165</a></p>
+</div>
+<div id="ref-uOs7XTRn">
+<p>8. <strong>Strength, Endurance, Throwing Velocity and in-Water Jump Performance of Elite German Water Polo Players</strong><br />
+Christoph Zinner, Billy Sperlich, Malte Krueger, Tim Focke, Jennifer Reed, Joachim Mester<br />
+<em>Journal of Human Kinetics</em> (2015-03-01) <a href="https://doi.org/gf4nbp">https://doi.org/gf4nbp</a><br />
+DOI: <a href="https://doi.org/10.1515/hukin-2015-0015">10.1515/hukin-2015-0015</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25964818">25964818</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4415827">PMC4415827</a></p>
+</div>
+<div id="ref-8QQByeMx">
+<p>9. <strong>Machine learning and statistical methods for the prediction of maximal oxygen uptake: recent advances</strong><br />
+Fatih Akay, Fatih Abut<br />
+<em>Medical Devices: Evidence and Research</em> (2015-08) <a href="https://doi.org/gf4nbr">https://doi.org/gf4nbr</a><br />
+DOI: <a href="https://doi.org/10.2147/mder.s57281">10.2147/mder.s57281</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26346869">26346869</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4556298">PMC4556298</a></p>
+</div>
+<div id="ref-iUmDuGC6">
+<p>10. <strong>Modelling and analysing track cycling Omnium performances using statistical and machine learning techniques</strong><br />
+Bahadorreza Ofoghi, John Zeleznikow, Dan Dwyer, Clare Macmahon<br />
+<em>Journal of Sports Sciences</em> (2013-05) <a href="https://doi.org/gf4nbj">https://doi.org/gf4nbj</a><br />
+DOI: <a href="https://doi.org/10.1080/02640414.2012.757344">10.1080/02640414.2012.757344</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/23320948">23320948</a></p>
+</div>
+<div id="ref-Dulx77Pa">
+<p>11. <strong>Predicting biathlon shooting performance using machine learning</strong><br />
+Thomas Maier, Daniel Meister, Severin Trösch, Jon Peter Wehrlin<br />
+<em>Journal of Sports Sciences</em> (2018-03-22) <a href="https://doi.org/gf4nbk">https://doi.org/gf4nbk</a><br />
+DOI: <a href="https://doi.org/10.1080/02640414.2018.1455261">10.1080/02640414.2018.1455261</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29565223">29565223</a></p>
+</div>
+<div id="ref-M4dO37MO">
+<p>12. <strong>Sports &amp; Nutrition Data Science using Gradient Boosting Machines</strong><br />
+Antonios Pantazopoulos, Manolis Maragoudakis<br />
+<em>Proceedings of the 10th Hellenic Conference on Artificial Intelligence - SETN ’18</em> (2018) <a href="https://doi.org/gf4nbn">https://doi.org/gf4nbn</a><br />
+DOI: <a href="https://doi.org/10.1145/3200947.3201060">10.1145/3200947.3201060</a></p>
+</div>
+<div id="ref-MBEmmpnE">
+<p>13. <strong>Computational intelligence in sports: Challenges and opportunities within a new research domain</strong><br />
+Iztok Fister Jr., Karin Ljubič, Ponnuthurai Nagaratnam Suganthan, Matjaž Perc, Iztok Fister<br />
+<em>Applied Mathematics and Computation</em> (2015-07) <a href="https://doi.org/f7dxx4">https://doi.org/f7dxx4</a><br />
+DOI: <a href="https://doi.org/10.1016/j.amc.2015.04.004">10.1016/j.amc.2015.04.004</a></p>
+</div>
+<div id="ref-doYf0PkM">
+<p>14. <strong>Gradient boosting machines, a tutorial</strong><br />
+Alexey Natekin, Alois Knoll<br />
+<em>Frontiers in Neurorobotics</em> (2013) <a href="https://doi.org/gfts5q">https://doi.org/gfts5q</a><br />
+DOI: <a href="https://doi.org/10.3389/fnbot.2013.00021">10.3389/fnbot.2013.00021</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/24409142">24409142</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3885826">PMC3885826</a></p>
 </div>
 </div>
 <!-- default theme -->
